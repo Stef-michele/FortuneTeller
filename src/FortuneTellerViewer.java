@@ -1,5 +1,11 @@
-public class Main {
+
+import javax.swing.*;
+
+public class FortuneTellerViewer {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        SwingUtilities.invokeLater(() -> {
+            FortuneTellerFrame frame = new FortuneTellerFrame();
+            frame.setVisible(true);
+        });
     }
 }
